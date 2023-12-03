@@ -3,7 +3,7 @@ import Script from "next/script";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import SVG from "@/public/Contact.svg";
+import SVG from "@/public/CONTACT.svg";
 
 export default function Contact() {
   const Router = useRouter();
