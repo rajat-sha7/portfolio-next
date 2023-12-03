@@ -1,0 +1,16 @@
+// ===================  Buttons Mixins
+@mixin button(
+  $bg-color,
+  $text-color,
+  $padding,
+  $border: 0,
+  $border-radius: 5px,
+  $cursor: pointer
+) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: $border;
+  border-radius: $border-radius;
+  cursor: $cursor;
+}

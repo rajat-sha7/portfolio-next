@@ -1,0 +1,58 @@
+// ===================  Grid Mixins
+$screen-xs: 0px;
+$screen-sm: 576px;
+$screen-max-md: 767px;
+$screen-md: 768px;
+$screen-md-ex: 1025px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1280px;
+$screen-xxxl: 1360px;
+
+
+@mixin grid-columns($columns: 1, $column-width: 1fr, $align-items: start, $justify-content: start, $grid-gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat($columns, $column-width);
+    grid-gap: $grid-gap;
+
+    @if $align-items != start {
+        align-items: $align-items;
+    } 
+    
+    @if $justify-content != start {
+        justify-content: $justify-content;
+    }
+}
+
+@mixin d-flex($direction: row, $align-items: flex-start, $justify-content: flex-start, $flex-wrap: wrap) {
+    display: flex;
+    flex-wrap: $flex-wrap;
+    
+    @if $direction != row {
+        flex-direction: $direction;
+    } 
+
+    @if $align-items != flex-start {
+        align-items: $align-items;
+    } 
+    
+    @if $justify-content != flex-start {
+        justify-content: $justify-content;
+    }
+
+}
+
+@mixin d-flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}

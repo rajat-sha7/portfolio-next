@@ -1,0 +1,180 @@
+.header {
+  height: max-content;
+  height: 74px;
+  background: transparent;
+  padding: 5px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.28);
+  position: fixed;
+  background-color: #f6f7fb;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+
+
+  width: 100%;
+  position: fixed;
+  top: -74px;
+  transition: 0.3s linear;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  z-index: 40;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+  @include grid-columns();
+
+
+  &-container {
+    @include grid-columns(1, 1fr 1fr);
+    grid-gap: 0;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  &__logo {
+    height: max-content;
+
+    p {
+      font-size: 24px;
+      display: inline;
+
+      span {
+        font-size: 20px;
+        color: gray;
+      }
+
+      @include allMobile {
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+
+    // img {
+    //   height: 65px;
+
+    //   &:hover {
+    //     -webkit-animation: spin 3s linear infinite;
+    //     -moz-animation: spin 3s linear infinite;
+    //     animation: spin 3s linear infinite;
+    //   }
+    // }
+
+    // @-moz-keyframes spin {
+    //   100% {
+    //     -moz-transform: rotatey(360deg);
+    //   }
+    // }
+
+    // @-webkit-keyframes spin {
+    //   100% {
+    //     -webkit-transform: rotatey(360deg);
+    //   }
+    // }
+
+    // @keyframes spin {
+    //   100% {
+    //     -webkit-transform: rotatey(360deg);
+    //     transform: rotatey(360deg);
+    //   }
+    // }
+  }
+
+  &__menu {
+    .menu-items {
+      @include d-flex(row, center, flex-end);
+      gap: 20px;
+
+      li {
+        font-size: 22px;
+        color: gray;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background: black;
+          color: black;
+          transition: width 0.3s;
+        }
+
+        &:hover::after {
+          width: 100%;
+          color: black;
+        }
+
+        &:hover {
+          // opacity: 0.5;
+          color: black;
+        }
+      }
+    }
+
+    @include allMobile {
+      .menu-items {
+        position: absolute;
+        background: white;
+        backdrop-filter: blur(3px);
+        padding: 30px 10px;
+        width: 0;
+        height: 0;
+        left: -100%;
+        top: 74px;
+        z-index: 100;
+        transition: 0.3s all ease-in-out;
+        @include d-flex(column);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        color: black;
+      }
+    }
+  }
+}
+
+.hidden {
+  z-index: 40;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+  position: fixed;
+  top: 0px;
+  transition: 0.3s linear;
+}
+
+.hamburger {
+  display: none;
+
+  @include allMobile {
+    display: block;
+    position: absolute;
+
+    height: 35px;
+    width: 35px;
+    right: 16px;
+    top: 20px;
+    cursor: pointer;
+    @include d-flex(column, center, center);
+    gap: 5px;
+    transition: all 0.25s ease-in-out;
+
+    .div1,
+    .div2,
+    .div3 {
+      height: 4px;
+      width: 100%;
+      background-color: black;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+}
+
+@include allMobile {
+  .active {
+    right: 10px !important;
+    height: 100vh !important;
+    width: 100% !important;
+    left: 0 !important;
+  }
+}

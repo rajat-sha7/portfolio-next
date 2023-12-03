@@ -1,0 +1,112 @@
+.projects {
+  padding: 80px 0;
+
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(246, 247, 251, 0.96)),
+    url('../public/hero.jpg');
+  // background:transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &-container {
+    @include d-flex-center(column);
+
+    @include allMobile {
+      gap: 10px;
+    }
+  }
+
+  &__title {
+    h2 {
+      font-size: 42px;
+      line-height: 130%;
+    }
+  }
+}
+
+.pcard {
+  @include grid-columns(1, 1fr 1fr);
+  grid-gap: 50px;
+  place-items: center;
+
+  @include allMobile {
+    @include grid-columns(1, 1fr);
+  }
+
+  &--image {
+    position: relative;
+    width: 100%;
+
+    img {
+      width: 77%;
+      filter: brightness(1);
+      transition: 0.5s all ease-in-out;
+
+      @include allMobile {
+        width: 100%;
+      }
+    }
+
+    &:hover img {
+      filter: brightness(0.4);
+
+    }
+  }
+
+  &--overlay {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    display: none;
+
+
+    a {
+      padding: 15px 20px;
+      font-size: 18px;
+      background-color: #f6f7fb;
+      cursor: pointer;
+    }
+  }
+
+  &--description {
+    padding-left: 130px;
+
+    @include allMobile {
+      display: none;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 22px;
+      padding-top: 30px;
+
+    }
+  }
+}
+
+.pcard--image:hover .pcard--overlay {
+  display: block;
+
+}
+
+.awssld__wrapper {
+  height: 600px !important;
+
+  @include allMobile {
+    height: 350px !important;
+  }
+}
+
+// #projectsCards {
+//   .awssld__wrapper {
+//     height: 500px !important;
+//   }
+
+//   .awssld__wrapper {
+//     height: max-content !important;
+//   }
+// }

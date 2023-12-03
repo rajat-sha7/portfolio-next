@@ -1,0 +1,8 @@
+.footer{
+    background:#f6f7fb;
+    height: auto;
+   padding: 10px 0;
+   &-container{
+    @include d-flex(row,center,center);
+   }
+}

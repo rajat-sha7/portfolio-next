@@ -1,0 +1,58 @@
+
+
+
+{
+  "title": "Aura Knowledge Base - Articles and Explainers",
+  "blog": [
+    {
+      "id": "1",
+      "slug": "approaching-website-development",
+      "description": "A Guide to Approaching a Website Development Project",
+      "image": "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "link": {
+        "url": "",
+        "title": "A Guide to Approaching a Website Development Project"
+      }
+    },
+    {
+      "id": "2",
+      "slug": "mobile-app-development",
+      "description": "Mobile App Development: What You Need to Know",
+      "image": "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "link": {
+        "url": "",
+        "title": "Mobile App Development: What You Need to Know"
+      }
+    },
+    {
+      "id": "3",
+      "slug": "pros-and-cons-of-wordpress",
+      "description": "The Pros and Cons of WordPress Development",
+      "image": "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "link": {
+        "url": "",
+        "title": "The Pros and Cons of WordPress Development"
+      }
+    },
+    {
+      "id": "4",
+      "slug": "understanding-headless-cms",
+      "description": "What is a Headless CMS? Should You Use One?",
+      "image": "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "link": {
+        "url": "",
+        "title": "What is a Headless CMS? Should You Use One?"
+      }
+    },
+    {
+      "id": "5",
+      "slug": "website-design-brand-speak",
+      "description": "Getting Website Design Right: How to Make Sure Your Brand Speaks Through on Your Website",
+      "image": "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "link": {
+        "url": "",
+        "title": "Getting Website Design Right: How to Make Sure Your Brand Speaks Through on Your Website"
+      }
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+.contact {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(246, 247, 251, 0.96)),
+        url('../public/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include mobile {
+        padding: 50px 0;
+    }
+
+    &-container {}
+
+    &__title {
+        padding: 15px 0;
+
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 500px;
+        height: max-content;
+        margin-inline: auto;
+
+        @include mobile {
+            width: 95%;
+        }
+
+        label {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            outline: none;
+            box-shadow: 6px 4px 1px white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            padding-top: 30px;
+
+            &:focus {
+                box-shadow: 6px 4px 1px blue;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            background: transparent;
+            outline: none;
+            box-shadow: 6px 4px 1px white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            padding-top: 30px;
+
+            &:focus {
+                box-shadow: 6px 4px 1px blue;
+            }
+        }
+
+        button {
+            width: 100%;
+            background: transparent;
+            outline: none;
+            box-shadow: 6px 4px 1px white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:focus {
+                // background: white;
+                color: black;
+                box-shadow: 6px 4px 1px blue;
+            }
+        }
+
+    }
+
+    &--divider {
+        @include grid-columns(1, 1fr 1fr, center, center);
+        padding: 25px 0;
+    }
+}
+
+@include tablet {
+    .contact--divider {
+        @include grid-columns(1, 1fr);
+
+    }
+}
+
+.form-group {
+    padding: 15px 0;
+    position: relative;
+}
+
+input:focus label {
+    display: block;
+    top: -30px !important;
+    left: 10px !important;
+
+}
+
+
+.clicktop {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+   @include allMobile{
+    right: 1rem;
+   }
+    cursor: pointer;
+    animation: top 2.5s linear infinite;
+
+    &:hover{
+        background-color: white;
+    }
+}
+
+.hidetop{
+   opacity: 1;
+}
+
+@keyframes top {
+    // 0%   {background-color: red;}
+    // 25%  {background-color: yellow;}
+    // 50%  {background-color: blue;}
+    // 100% {background-color: green;}
+
+
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+  }

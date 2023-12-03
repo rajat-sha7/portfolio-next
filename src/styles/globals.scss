@@ -1,0 +1,155 @@
+/*
+* Global CSS
+*/
+@import "./mixins";
+@import "./variables";
+@import "./resets";
+@import "./Modules/modules";
+
+  * {
+    font-family: $primary-font;
+    scroll-behavior: smooth;
+    scrollbar-base-color: transparent;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} 
+  }
+  body{
+    color: black;
+    scroll-behavior: smooth;
+
+   
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $heading-font;
+    line-height: 130%;
+  }
+
+  h2{
+    font-size: 42px;
+    text-align: center;
+    line-height: 130%;
+    @include allMobile{
+      font-size: 28px;
+    }
+  }
+
+  img{
+    // filter: drop-shadow(4px 9px 8px black);
+  }
+  p{  line-height: 130%;}
+  // Container
+  .container {
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @media (max-width: 992px) {
+      max-width: 960px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 720px;
+    }
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
+  }
+
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  // Section default style
+  .section {
+    &-details {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    &-subtitle {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    &-title {
+      margin-bottom: 25px;
+      font-size: 7rem;
+    }
+
+    &-description {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 28px;
+      line-height: 25px;
+    }
+  }
+
+  .section-title {
+    @media (max-width: 992px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 4.5rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 4rem;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 442px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .section-description {
+    @media (max-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  // Text alignments
+  .text {
+    &-left {
+      text-align: left;
+    }
+    &-right {
+      text-align: right;
+    }
+    &-center {
+      text-align: center !important;
+    }
+  }
+
+  .section-container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  ul {
+    list-style: none;
+  }
+

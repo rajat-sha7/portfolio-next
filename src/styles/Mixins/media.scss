@@ -1,0 +1,52 @@
+// ===================  Media Mixins
+
+$bp-xs: 0px;
+$bp-sm: 576px;
+$bp-max-md: 767px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-md-ex: 1025px;
+$bp-lg-ex: 1200px;
+$bp-xl: 1280px;
+$bp-xxl: 1360px;
+
+@mixin mobile($size: $bp-sm) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin mobileLandscape {
+  @media (min-width: ($bp-sm + 1px)) and (max-width: $bp-max-md) {
+    @content;
+  }
+}
+
+@mixin allMobile($size: $bp-max-md) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin tablet($size: ($bp-lg - 1px)) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin tabletLandscape {
+  @media (min-width: ($bp-lg)) and (max-width: $bp-lg-ex) {
+    @content;
+  }
+}
+
+@mixin smallDesktop($size: ($bp-lg-ex - 1px)) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+@mixin Desktop($size: ($bp-xl)) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
