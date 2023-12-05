@@ -95,6 +95,12 @@
                 span{
                     color: gray;
                 }
+
+
+                @include allMobile{
+                    font-size: 18px;
+                    max-width: 400px;
+                }
            
         }
     }
