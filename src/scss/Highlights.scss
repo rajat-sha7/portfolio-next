@@ -1,7 +1,8 @@
 .highlights {
     padding: 100px 0px;
     
-    background-color: #f6f7fb;
+    // background-color: #f6f7fb;
+    background: red;
 
     &-container {
         @include grid-columns(1, 1fr);
@@ -17,6 +18,10 @@
             font-size: 32px;
             line-height: 130%;
             padding-bottom: 50px;
+
+            @include allMobile{
+                font-size: 28px;
+            }
         }
     }
 
@@ -56,11 +61,15 @@
     .rightbox {
         width: 100%;
         padding: 50px;
+        @include allMobile{
+            padding: 10px;
+        }
         &__title{
             h2{
                 font-size: 32px;
                 line-height: 130%;
                 padding-top: 50px;
+                
             }
 
         }
@@ -71,6 +80,9 @@
             padding-top: 50px;
             max-width: 500px;
             margin-inline: auto;
+            @include allMobile{
+                font-size: 18px;
+            }
 
         }
         &__techused{
