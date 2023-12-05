@@ -79,7 +79,7 @@ export default function Header() {
             {/* <li>
               <Link href="#portfolio">Portfolio</Link>
             </li> */}
-            <li >
+            <li className="contactli">
               <Link href="#contact">Contact</Link>
             </li>
             <li>

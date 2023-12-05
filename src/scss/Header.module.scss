@@ -178,3 +178,9 @@
     left: 0 !important;
   }
 }
+
+.contactli{
+  @include allMobile{
+    display: none;
+  }
+}
