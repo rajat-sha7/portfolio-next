@@ -1,8 +1,8 @@
 .highlights {
     padding: 100px 0px;
     
-    // background-color: #f6f7fb;
-    background: red;
+    background-color: #f6f7fb;
+    // background: red;
 
     &-container {
         @include grid-columns(1, 1fr);
