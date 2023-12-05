@@ -112,6 +112,12 @@
                 
             }
 
+            @include mobile{
+                font-size: 10px;
+                padding: 10px 0;
+                letter-spacing: 0px;
+            }
+
 
         }
 
