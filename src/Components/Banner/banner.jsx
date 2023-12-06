@@ -39,18 +39,14 @@ export default function banner() {
               </div>
             </motion.div>
           </div>
-          <motion.div
-             initial={{ x: 15 ,opacity:0.6}}
-          whileInView={{ x: 0 , opacity:1}}
-          transition={{ duration: "4" }}
-          viewport={{ once: true }}
+          <div
 
           
            className="banner__wrap--right">
             <Image  
               src={Bimage}  
              alt="web-development-cta-image"   />
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

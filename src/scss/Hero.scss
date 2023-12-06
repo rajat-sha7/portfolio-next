@@ -109,6 +109,7 @@
                 padding: 25px 0;
                 letter-spacing: 10px;
                 font-weight: 900;
+                width: 100%;
                 
             }
 
@@ -168,7 +169,7 @@
 
             &__badge {
                 h4 {
-                    letter-spacing: 5px;
+                    letter-spacing: 2px;
                 }
 
 
@@ -186,7 +187,7 @@
                     font-size: 22px;
                     padding: 15px 0;
                     font-weight: 400;
-                    max-width: 548px;
+                    
                     text-align: justify;
                 }
 
@@ -243,6 +244,7 @@
                 p {
                     font-size: 18px;
                     line-height: 28px;
+                    max-width: 548px;
                 }
 
             }
