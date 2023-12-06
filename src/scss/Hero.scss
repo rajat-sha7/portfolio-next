@@ -164,6 +164,25 @@
     }
 
     @include tablet {
+        &__avatar {
+            @include d-flex(column, center, space-between);
+            img{
+                width: 50%;
+                height: max-content;
+            }
+
+
+            &__tagline {
+                height: 10px;
+                padding-top: 15px;
+            }
+
+
+        }
+        &-container {
+            @include grid-columns(1, 1fr, center, center);
+
+        }
 
         &__content {
 
@@ -184,11 +203,11 @@
 
             &__subtitle {
                 p {
-                    font-size: 22px;
+                    font-size: 18px;
                     padding: 15px 0;
                     font-weight: 400;
                     
-                    text-align: justify;
+                    // text-align: justify;
                 }
 
             }
