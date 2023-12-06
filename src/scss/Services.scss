@@ -39,12 +39,18 @@
         @include allMobile {
             width: 100%;
         }
+        @include mobile{
+            padding: 0 15px 30px;
+        }
     }
 
     &-content-box {
         border: 1px solid #000000;
         border-radius: 15px;
         padding: 27px 15px 28px 38px;
+        @include mobile{
+            padding: 15px 10px;
+        }
         height: 100%;
         background-color: #ffffff;
         position: relative;
