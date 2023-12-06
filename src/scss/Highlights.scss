@@ -32,14 +32,14 @@
         @include d-flex-center(row);
         gap: 40px;
         align-items: start;
-        @include tablet {
+        @include allMobile {
             flex-direction: column;
             gap: 20px
         }
         &--reverse{
           
           
-            @include tablet{
+            @include allMobile{
                 flex-direction: column-reverse;
             }
         }
