@@ -17,6 +17,11 @@
     place-items: center;
 
     @include tablet {
+      @include grid-columns(1, 1fr, 1fr);
+      grid-gap: 20px;
+    }
+
+    @include mobile {
       @include grid-columns(1, 1fr);
       grid-gap: 20px;
     }
