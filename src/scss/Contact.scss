@@ -82,7 +82,7 @@
     }
 }
 
-@include tablet {
+@include allMobile {
     .contact--divider {
         @include grid-columns(1, 1fr);
 
