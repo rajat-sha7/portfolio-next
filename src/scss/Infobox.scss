@@ -16,16 +16,11 @@
     grid-gap: 20px;
     place-items: center;
 
-   
-    @include allMobile{
+    @include allMobile {
       @include grid-columns(1, 1fr);
-      grid-gap: 10px;
+      grid-gap: 20px;
     }
-      
-    }
-  
   }
-
 
   &__card {
     width: 100%;
