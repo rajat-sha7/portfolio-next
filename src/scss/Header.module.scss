@@ -119,8 +119,9 @@
         padding: 30px 10px;
         width: 0;
         height: 0;
+        
         left: -100%;
-        top: 74px;
+        top: 69px;
         z-index: 100;
         transition: 0.3s all ease-in-out;
         @include d-flex(column);
