@@ -16,16 +16,16 @@
     grid-gap: 20px;
     place-items: center;
 
-    @include tablet {
-      @include grid-columns(1, 1fr, 1fr);
-      grid-gap: 20px;
-    }
-
-    @include mobile {
+   
+    @include allMobile{
       @include grid-columns(1, 1fr);
-      grid-gap: 20px;
+      grid-gap: 10px;
     }
+      
+    }
+  
   }
+
 
   &__card {
     width: 100%;
